@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_home"
+    style="@style/ScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- RecyclerView for tasks -->
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:background="#00FEFCF5"
+        android:elevation="10dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Today's ToDos"
+        style="@style/headerColor"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linear_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- RecyclerView for tasks -->
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:layout_gravity="center_horizontal"
+            android:text="Sort by Priority" />
+
+        <!-- Search View -->
+        <android.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:queryHint="Search tasks..." />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#00FFFFFF">
+
+        <TextView
+            android:id="@+id/noTasksMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="No tasks for today!"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="648dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="229dp"
+                android:layout_height="470dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/animation"
+                app:srcCompat="@drawable/animation" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="165dp"
+                android:layout_height="404dp"
+                android:layout_gravity="center"
+                android:src="@drawable/animation" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Message for no tasks -->
+
+</LinearLayout>

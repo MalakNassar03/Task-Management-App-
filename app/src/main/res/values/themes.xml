@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.1201107_1200757_CourseProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lightblue</item>
+        <item name="colorPrimaryVariant">#C4A2BFDA</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/lightblue</item>
+        <item name="colorSecondaryVariant">@color/lightblue</item>
+        <item name="colorOnSecondary">@color/lightblue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/Navy</item>
+    </style>
+
+    <style name="Theme.1201107_1200757_CourseProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.1201107_1200757_CourseProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.1201107_1200757_CourseProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ScreenBackground">
+        <item name="android:background">@drawable/b</item>
+    </style>
+
+    <style name="CardBackground">
+        <item name="android:backgroundTint">#D01F3A60</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:textColor">#252A40</item>
+    </style>
+    <style name="TextColor">
+        <item name="android:textColor">@color/Whiteblue</item>
+        <item name="android:textColorHint">@color/Whiteblue</item>
+
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.a1201107_1200757_courseproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_searchtask"
+        android:name="com.example.a1201107_1200757_courseproject.ui.SearchTask.SearchTaskFragment"
+        android:label="@string/menu_searchtask"
+        tools:layout="@layout/fragment_searchtask" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.a1201107_1200757_courseproject.ui.logout.logoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.a1201107_1200757_courseproject.ui.profile.profileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+    <fragment
+        android:id="@+id/nav_new_task"
+        android:name="com.example.a1201107_1200757_courseproject.ui.NewTask.NewTaskFragment"
+        android:label="@string/menu_new_task"
+        tools:layout="@layout/fragment_new_task" />
+
+    <fragment
+        android:id="@+id/nav_all"
+        android:name="com.example.a1201107_1200757_courseproject.ui.All.AllFragment"
+        android:label="@string/menu_all"
+       tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_completed"
+        android:name="com.example.a1201107_1200757_courseproject.ui.completed.CompletedFragment"
+        android:label="@string/menu_completed"
+        tools:layout="@layout/fragment_home" />
+
+</navigation>

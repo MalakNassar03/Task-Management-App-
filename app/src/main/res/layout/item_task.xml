@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="8dp"
+    android:backgroundTint="#E4DBE3F0"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/taskTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Task Title"
+            android:textColor="#D01F3A60"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/editButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Task Description"
+            android:textColor="#951F3A60"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/editButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskTitle"
+            tools:ignore="NotSibling" />
+
+        <!-- Task Due Date -->
+        <TextView
+            android:id="@+id/taskDueDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Due Date"
+            android:textColor="#D01F3A60"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/editButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskDescription"
+            tools:ignore="NotSibling" />
+
+        <!-- Task Due Time -->
+        <TextView
+            android:id="@+id/taskDueTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Due Time"
+            android:textColor="#D01F3A60"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/editButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskDueDate"
+            tools:ignore="NotSibling" />
+
+        <!-- Task Priority -->
+        <TextView
+            android:id="@+id/taskPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Priority"
+            android:textColor="#D01F3A60"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskDueTime" />
+
+        <!-- Task Status -->
+        <TextView
+            android:id="@+id/taskStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Status"
+            android:textColor="#D01F3A60"
+
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskPriority" />
+
+
+
+        <Switch
+            android:id="@+id/completedSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toEndOf="@id/taskStatus"
+            app:layout_constraintTop_toTopOf="@id/taskStatus"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <LinearLayout
+            android:id="@+id/imageButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Edit Button -->
+            <ImageButton
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="Edit Task"
+                app:srcCompat="@drawable/edit" />
+
+            <!-- Delete Button -->
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="Delete Task"
+                app:srcCompat="@drawable/delete" />
+
+            <!-- Reminder Button -->
+            <ImageButton
+                android:id="@+id/reminderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="Set Reminder"
+                app:srcCompat="@drawable/alarm" />
+
+            <!-- Share Button -->
+            <ImageButton
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="Share Task"
+                app:srcCompat="@drawable/share" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
